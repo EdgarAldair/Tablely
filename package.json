@@ -1,0 +1,31 @@
+{
+  "name": "tablely",
+  "displayName": "Tablely Color Theme",
+  "description": "A vibrant dark theme with floating glass panels, rounded corners, pill-shaped UI elements, and smooth transitions. Colors carefully selected for legibility and accessibility.",
+  "version": "0.1.0",
+  "publisher": "EdgarAldair",
+  "homepage": "https://github.com/EdgarAldair/tablely",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EdgarAldair/tablely"
+  },
+  "galleryBanner": {
+    "color": "#0d1117",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.12.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Tablely",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Tablely-color-theme.json"
+      }
+    ]
+  }
+}
