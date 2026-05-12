@@ -7,6 +7,12 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/973d0794-5a5a-446f-8c85-4cf54771d4a2" width="160%" alt="Tablely preview" />
 </p>
+
+
+<p>The Tablely Theme colors are carefully selected with legibility and people with dyslexia in mind to create an accessible theme for Visual Studio Code and feel comfortable writting code</p>
+
+<p>Download the theme on the <a href="https://marketplace.visualstudio.com/items?itemName=EdgarAldair.tablely">VSCode Extension marketplace</a> or <a href="https://github.com/EdgarAldair/Tablely">fork it on GitHub</a></p>
+
 <br>
 <br>
 <br>
