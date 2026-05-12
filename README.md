@@ -1,28 +1,40 @@
 # Tablely
 
-Un tema oscuro para Visual Studio Code con paneles flotantes de vidrio, esquinas redondeadas, barra de actividad en forma de píldora y transiciones suaves — con una paleta Ember Dark centrada en tonos naranja-ámbar.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c6af23cd-7e64-4197-8268-cff2002e8956" width="120" alt="Tablely logo" />
+</p>
 
-## Características
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4f4ccce2-aa6b-4f76-870d-13d3d645674f" width="100%" alt="Tablely preview" />
+</p>
 
-- Fondo canvas navy oscuro (`#050710`) detrás de todos los paneles flotantes
-- Bordes con efecto vidrio y simulación de luz direccional (más brillante arriba/izquierda, sutil abajo/derecha)
-- Esquinas redondeadas en todos los paneles, notificaciones, paleta de comandos y sidebars
-- Barra de actividad en forma de píldora con indicadores de selección de vidrio
-- Breadcrumb y barra de estado que se atenúan al no estar en hover
-- Botones de cierre de pestañas que aparecen con fade en hover
-- Transiciones suaves en selecciones del sidebar, scrollbars y barra de estado
-- Scrollbar en forma de píldora con tinte naranja
-- Minimap con fondo unificado y slider en tono naranja sutil
-- Efecto glow en iconos con color matching (funciona mejor con el tema de iconos Seti Folder)
-- Sintaxis Ember Dark: naranja (`#d4683a`), ámbar (`#c8892a`), coral claro (`#e8a070`), teal (`#6ab8c0`)
+A dark VS Code theme with floating glass panels, rounded corners, pill-shaped activity bar, and smooth transitions — built on an Ember Dark palette centered around warm orange-amber tones.
 
-## Instalación
+---
 
-Este tema tiene dos partes: el tema de colores y las personalizaciones CSS que crean el efecto de paneles de vidrio flotantes.
+## Features
 
-### Paso 1: Instalar el tema
+- Deep navy canvas (`#050710`) behind all floating panels
+- Directional glass borders — brighter top/left, subtle bottom/right
+- Rounded corners on all panels, notifications, command palette, and sidebars
+- Pill-shaped activity bar with glass selection indicators
+- Breadcrumbs and status bar that fade until hovered
+- Tab close buttons that fade in on hover
+- Smooth transitions on sidebar selections, scrollbars, and status bar
+- Pill-shaped scrollbar with a subtle orange tint
+- Minimap with unified background and orange-tinted viewport slider
+- Icon glow effect with color matching (works best with **Seti Folder** icon theme)
+- Ember Dark syntax: orange (`#d4683a`), amber (`#c8892a`), light coral (`#e8a070`), teal (`#6ab8c0`)
 
-Clona el repositorio y copia los archivos de extensión:
+---
+
+## Installation
+
+Tablely has two parts: the color theme, and CSS customizations via **Custom UI Style** that create the floating glass panel effect.
+
+### Step 1 — Install the theme
+
+Clone the repo and copy the extension files:
 
 ```bash
 git clone https://github.com/EdgarAldair/Tablely.git tablely
@@ -32,58 +44,82 @@ cp package.json ~/.vscode/extensions/edgaraldair.tablely-0.1.0/
 cp -r themes ~/.vscode/extensions/edgaraldair.tablely-0.1.0/
 ```
 
-### Paso 2: Instalar la extensión Custom UI Style
+### Step 2 — Install Custom UI Style
 
-Los paneles flotantes, esquinas redondeadas, bordes de vidrio y animaciones funcionan gracias a la extensión **Custom UI Style**.
+The floating panels, rounded corners, glass borders, and animations all require the **Custom UI Style** extension.
 
-1. Abre Extensiones en VS Code (`Cmd+Shift+X`)
-2. Busca `Custom UI Style` (by subframe7536)
-3. Haz clic en Instalar
+1. Open Extensions (`Cmd+Shift+X` / `Ctrl+Shift+X`)
+2. Search for `Custom UI Style` by **subframe7536**
+3. Click Install
 
-### Paso 3: Instalar el tema de iconos recomendado
+### Step 3 — Install the recommended icon theme
 
-Para el mejor efecto de glow en iconos, instala **Seti Folder**:
+For the best icon glow effect, install **Seti Folder**:
 
-1. Abre Extensiones (`Cmd+Shift+X`)
-2. Busca `Seti Folder` (by l-igh-t)
-3. Haz clic en Instalar
-4. Actívalo: Command Palette > `Preferences: File Icon Theme` > `Seti Folder`
+1. Open Extensions (`Cmd+Shift+X`)
+2. Search for `Seti Folder` by **l-igh-t**
+3. Click Install
+4. Activate it: Command Palette → `Preferences: File Icon Theme` → `Seti Folder`
 
-### Paso 4: Instalar las fuentes
+### Step 4 — Install the UI font
 
-Este tema usa tres fuentes:
+Tablely uses **Bear Sans UI** for the sidebar, tabs, command center, and status bar. The font files are included in the `fonts/` folder.
 
-- **Bear Sans UI** — sidebar, pestañas, command center y status bar *(incluida en la carpeta `fonts/`)*
-- **IBM Plex Mono** — en el editor (recomendada)
-- **FiraCode Nerd Font Mono** — en la terminal (con ligaduras)
+- **macOS**: Open the `fonts/` folder, select all `.otf` files, double-click to open in Font Book
+- **Windows**: Select all `.otf` files, right-click → Install
 
-Para instalar **Bear Sans UI**:
-- **macOS**: abre la carpeta `fonts/`, selecciona todos los archivos `.otf` y haz doble clic para abrirlos en Font Book
-- **Windows**: selecciona todos los `.otf`, clic derecho → Instalar
+> Bear Sans UI must be installed for the UI to render correctly.
 
-IBM Plex Mono y FiraCode Nerd Font Mono deben instalarse por separado.
+### Step 5 — Apply the settings
 
-### Paso 5: Aplicar la configuración
+Merge the contents of `settings.json` from this repo into your VS Code user settings:
 
-Copia el contenido de `settings.json` de este repositorio en tu configuración de VS Code:
+1. Open Command Palette (`Cmd+Shift+P`)
+2. Search for `Preferences: Open User Settings (JSON)`
+3. Copy and merge the contents of `settings.json` into your config
 
-1. Abre Command Palette (`Cmd+Shift+P`)
-2. Busca `Preferences: Open User Settings (JSON)`
-3. Fusiona el contenido de `settings.json` de este repo en tu archivo de configuración
+> **Important:** Do not replace your entire settings file — only merge the keys from this file. This preserves your existing configuration (fonts, keybindings, extensions, etc.).
 
-### Paso 6: Habilitar Custom UI Style
+### Step 6 — Enable Custom UI Style
 
-1. Abre Command Palette (`Cmd+Shift+P`)
-2. Ejecuta `Custom UI Style: Enable`
-3. VS Code se recargará
+1. Open Command Palette (`Cmd+Shift+P`)
+2. Run `Custom UI Style: Enable`
+3. VS Code will reload
 
-> **Nota:** Puede aparecer una advertencia de "instalación corrupta". Es esperado ya que Custom UI Style inyecta CSS en VS Code. Haz clic en el engrane y selecciona "Don't Show Again".
+> You may see a "corrupted installation" warning. This is expected — Custom UI Style injects CSS into VS Code. Click the gear icon and select **Don't Show Again**.
 
-## Personalización
+---
 
-Todas las propiedades visuales clave están controladas por variables CSS en `settings.json`. Edita las variables en `.monaco-workbench` para ajustar el aspecto:
+## Editor font & ligatures (optional)
 
-```json
+The `settings.json` in this repo intentionally does **not** include `editor.fontFamily` or `editor.fontLigatures` — those are personal preferences and would override your existing setup.
+
+If you want to match the setup this theme was designed with, add these to your **personal** `settings.json`:
+
+```jsonc
+// Recommended editor font with ligatures
+"editor.fontFamily": "'FiraCode Nerd Font Mono', monospace",
+"editor.fontSize": 13,
+"editor.fontLigatures": true,
+
+// Recommended terminal font (supports Nerd Font icons)
+"terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
+```
+
+**FiraCode Nerd Font Mono** must be installed separately:
+- Download from [nerdfonts.com](https://www.nerdfonts.com/font-downloads) → search for **FiraCode**
+- Install the font files on your system
+- Fully quit and restart VS Code (`Cmd+Q`, then reopen)
+
+> Ligatures only activate after a full restart — `Developer: Reload Window` is not enough.
+
+---
+
+## Customization
+
+All key visual properties are controlled by CSS variables in `settings.json`. Edit the variables under `.monaco-workbench` to adjust the look:
+
+```jsonc
 ".monaco-workbench": {
     "--tablely-panel-radius": "20px",
     "--tablely-widget-radius": "12px",
@@ -96,32 +132,55 @@ Todas las propiedades visuales clave están controladas por variables CSS en `se
 }
 ```
 
-| Variable | Valor por defecto | Aplica a |
+| Variable | Default | Applies to |
 |---|---|---|
-| `--tablely-bg-canvas` | `#050710` | Fondo profundo detrás de todos los paneles |
-| `--tablely-bg-surface` | `#0a0d11` | Fondo de paneles/elementos interactivos |
-| `--tablely-panel-radius` | `20px` | Sidebar, editor, terminal/panel inferior |
-| `--tablely-widget-radius` | `12px` | Notificaciones, paleta de comandos |
-| `--tablely-input-radius` | `8px` | Barras de búsqueda, botones, tooltips |
-| `--tablely-item-radius` | `3px` | Filas de lista, pestañas, encabezados de panel |
-| `--tablely-panel-gap` | `6px` | Espaciado horizontal entre paneles |
-| `--tablely-panel-top` | `6px` | Margen superior de paneles |
+| `--tablely-bg-canvas` | `#050710` | Deep background behind all panels |
+| `--tablely-bg-surface` | `#0a0d11` | Editor, sidebar, and panel backgrounds |
+| `--tablely-panel-radius` | `20px` | Sidebar, editor, bottom terminal/panel |
+| `--tablely-widget-radius` | `12px` | Notifications, command palette |
+| `--tablely-input-radius` | `8px` | Search bars, buttons, tooltips |
+| `--tablely-item-radius` | `3px` | List rows, tabs, panel headers |
+| `--tablely-panel-gap` | `6px` | Horizontal spacing between panels |
+| `--tablely-panel-top` | `6px` | Top margin of panels |
 
-## Paleta de colores
+After editing any CSS variable, run `Custom UI Style: Reload` from the Command Palette to apply changes.
 
-| Color | Hex | Uso |
+---
+
+## Color palette
+
+| Role | Hex | Used for |
 |---|---|---|
-| Canvas | `#050710` | Fondo de la capa más profunda |
-| Surface | `#0a0d11` | Fondo del editor y sidebar |
+| Canvas | `#050710` | Deepest background layer |
+| Surface | `#0a0d11` | Editor and sidebar background |
 | Panel | `#131a22` | Titlebar, status bar, dropdowns |
-| Naranja (hero) | `#d4683a` | Strings, activity bar, botones, acento principal |
-| Coral claro | `#e8a070` | Funciones y entidades |
-| Ámbar | `#c8892a` | Tipos y clases de soporte |
-| Rojo-naranja | `#c55e35` | Keywords |
-| Teal | `#6ab8c0` | Constantes y unidades |
-| Crema | `#dbd6cc` | Texto principal |
-| Gris medio | `#7a8494` | Status bar, elementos secundarios |
+| Orange (hero) | `#d4683a` | Strings, activity bar, buttons, main accent |
+| Light coral | `#e8a070` | Functions and entities |
+| Amber | `#c8892a` | Types and support classes |
+| Red-orange | `#c55e35` | Keywords |
+| Teal | `#6ab8c0` | Constants and units |
+| Cream | `#dbd6cc` | Main text |
+| Mid-gray | `#7a8494` | Status bar, secondary elements |
+| Comment | `#5a4f48` | Comments (italic) |
 
-## Licencia
+---
+
+## Troubleshooting
+
+**Panels don't look rounded / glass effect is missing**
+→ Make sure Custom UI Style is installed and enabled (`Custom UI Style: Enable`)
+
+**Activity bar is horizontal**
+→ Remove or comment out `"workbench.activityBar.location": "top"` from your settings — the CSS is designed for the vertical side activity bar
+
+**Ligatures are not showing**
+→ Fully quit VS Code (`Cmd+Q`) and reopen — `Developer: Reload Window` is not sufficient for font changes
+
+**"Corrupted installation" warning**
+→ This is normal when Custom UI Style is active. Click the gear and select **Don't Show Again**
+
+---
+
+## License
 
 MIT
