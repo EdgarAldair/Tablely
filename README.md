@@ -1,13 +1,15 @@
 # Tablely
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c6af23cd-7e64-4197-8268-cff2002e8956" width="120" alt="Tablely logo" />
+  <img src="https://github.com/user-attachments/assets/c6af23cd-7e64-4197-8268-cff2002e8956" width="400" alt="Tablely logo" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4f4ccce2-aa6b-4f76-870d-13d3d645674f" width="100%" alt="Tablely preview" />
+  <img src="https://github.com/user-attachments/assets/973d0794-5a5a-446f-8c85-4cf54771d4a2" width="160%" alt="Tablely preview" />
 </p>
-
+<br>
+<br>
+<br>
 A dark VS Code theme with floating glass panels, rounded corners, pill-shaped activity bar, and smooth transitions — built on an Ember Dark palette centered around warm orange-amber tones.
 
 ---
