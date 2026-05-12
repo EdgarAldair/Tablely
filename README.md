@@ -5,15 +5,13 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/973d0794-5a5a-446f-8c85-4cf54771d4a2" width="160%" alt="Tablely preview" />
+  <img width="2056" height="1228" alt="Screenshot 2026-05-12 at 12 36 05 a m" src="https://github.com/user-attachments/assets/7958082b-b845-43de-bc25-4219bc31b89b" />
 </p>
 
 
 <p>The Tablely Theme colors are carefully selected with legibility and people with dyslexia in mind to create an accessible theme for Visual Studio Code and feel comfortable writting code</p>
 
 <p>Download the theme on the <a href="https://marketplace.visualstudio.com/items?itemName=EdgarAldair.tablely">VSCode Extension marketplace</a> or <a href="https://github.com/EdgarAldair/Tablely">fork it on GitHub</a></p>
-
-<br>
 <br>
 <br>
 A dark VS Code theme with floating glass panels, rounded corners, pill-shaped activity bar, and smooth transitions — built on an Ember Dark palette centered around warm orange-amber tones.
